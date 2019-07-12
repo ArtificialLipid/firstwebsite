@@ -1,0 +1,52 @@
+body {
+    background-color: hsl(210, 30%, 70%);
+}
+div.main {
+    background-color: hsl(210, 40%, 55%);
+    outline-style: groove;
+    outline-color: invert;
+    outline-width: .4cm;
+    align-content: center;
+    text-align: center;
+    width: 50%;
+    padding: 15px 30px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: white;
+    margin: 20px;
+}
+h1 {
+    background-color: hsl(248, 53%, 65%);
+    width: 90%;
+    padding: 10px;
+    border-style: solid dotted;
+    border-color: maroon;
+    border-radius: 15px;
+    margin: 20px 10px;
+}
+p {
+    color: brown;
+    background-color: aquamarine;
+    width: 50%;
+    max-width: 600px;
+    padding: 15px 30px;
+    border-width: 4px;
+    border-style: dashed solid;
+    border-color: hsl(110, 90%, 40%);
+    margin: 20px;
+}
+#hiContent {
+    outline-style: groove;
+    outline-color: invert;
+    outline-width: .4cm;
+    align-content: center;
+    text-align: center;
+}
+/* Active Elements */
+a:visited {
+    color: red;
+}
+::selection {
+    color: hsl(200, 80%, 60%);
+    background: yellow;
+}

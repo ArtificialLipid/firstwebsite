@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang='en-US'> 
+    <head>
+        <link rel='stylesheet' href='style.css'>
+        <script src='webScripts.js'>
+        </script>
+        <title>
+            Virtual Workspace
+        </title>
+    </head>
+    <body>
+        <div class='header'>
+            <a href="page2.html"> Weengis. </a>
+            <h1>
+                This is where I try new things.
+            </h1>
+            <input id='searchbar' type='text'> <!-- I'm gonna type this mf comment here for y'all to put your eyeballs on-->
+            <input id='btn' type='button' value='Website' onclick="window.open('http://youtube.com')"/>
+        </div>
+        <div class='testing'>
+            <h3 title='testing block'>
+                Testing block.
+            </h3>
+            <p onclick="flipColor(this, 'red')">
+                boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof 
+            </p>
+        </div>
+        <div class='meat'>
+            <h3 title='main stuff'>
+                Meat of the site.
+            </h3>
+            <p id='hiContent'>
+                Here's some more content for my website that I'm building. If you'd like to see more, you can click <a href='http://y.dsausa.org' target='blank'>here!</a> Thanks for visiting
+                my website.
+            </p>
+            <figure style='display: block; margin-left: auto; margin-right: auto; width: 50%'>
+                <img src='https://upload.wikimedia.org/wikipedia/commons/e/e7/AR_elaine_riot.jpg' alt='White supremacist propaganda' style='border: 5px solid black'>
+                <figcaption>White supremacist propaganda. Made up lies.</figcaption>
+            </figure>
+        </div>
+        <div class='main' style='outline-color: crimson'>
+            <p>
+                I'm a rising fourth-year student pursuing majors in Physics and Mathematics at Georgia Tech. I use they/them and he/him pronouns, and am currently in the process of becoming comfortable with my gender and sexuality.
+                <br /> <br />
+                My hobbies include:
+            </p>
+            <ul>
+                <li style='text-decoration: overline'>Playing music (guitar and drums)</li>
+                <li style='text-transform: capitalize'>Building socialism (as a member of DSA)</li>
+                <li style='letter-spacing: -3px'>Learning new things (currently web development and developmental psychology/emotional support, I guess)</li>
+                <li style='direction: rtl'>Leading the GT radio station, WREK Atlanta (I'm on the executive board and run a speciality show)</li>
+            </ul>
+            <p>
+                Curious about democratic socialism? So was I, so I read this to get introduced:
+            </p>
+                <blockquote cite='https://www.dsausa.org/'>
+                    The Democratic Socialists of America (DSA) is the largest socialist organization in the United States. We believe that working people should run both the economy and society democratically to meet human needs, not to make profits for a few... We are a political and activist organization... [whose] members use a variety of tactics, from legislative to direction action, to fight for reforms that empower working people.
+                </blockquote>
+        </div>
+
+        <script>
+            let searchInput = document.getElementById('searchbar');
+            searchInput.addEventListener('keyup', buttonOnEnter)
+        </script>
+    </body>
+</html>
