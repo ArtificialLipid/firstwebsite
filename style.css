@@ -71,19 +71,29 @@ td, th {
 
 /* Top Navigation Bar */
 ul#topbar {
+    background-color: hsl(0, 100%, 8%);
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: hsl(0, 100%, 8%)
+    max-width: 450px;
 }
 ul#topbar li {
     border: 1px white groove;
     display: inline-block;
     color: chartreuse;
     text-align: center;
-    padding: 16px;
+    padding: 16px 0px;
     text-decoration: none
+}
+ul#topbar li:hover {
+    background: white;
+    color: black;
+}
+ul#topbar li a {
+    padding: 16px;
+    height: 100%;
+    width: 100%;
 }
 
 /* Active Elements */
