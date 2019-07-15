@@ -1,5 +1,13 @@
+/*Table of Contents:
+1. Main Document
+2. Top Navigation Bar
+3. Active Elements
+*/
+
+/*Main Document*/
 body {
     background-color: hsl(210, 30%, 70%);
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 div.main {
     background-color: hsl(210, 40%, 55%);
@@ -24,16 +32,31 @@ h1 {
     border-radius: 15px;
     margin: 20px 10px;
 }
+h1, h2, h3, h4, h5, h6, li {
+    font-family: 'Times New Roman', Times, serif !important;
+
+}
 p {
-    color: brown;
     background-color: aquamarine;
-    width: 50%;
-    max-width: 600px;
-    padding: 15px 30px;
     border-width: 4px;
     border-style: dashed solid;
     border-color: hsl(110, 90%, 40%);
+    color: brown;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    max-width: 600px;
     margin: 20px;
+    padding: 15px 30px;
+    width: 50%;
+}
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 5px;
+}
+td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
 }
 #hiContent {
     outline-style: groove;
@@ -42,9 +65,31 @@ p {
     align-content: center;
     text-align: center;
 }
+#breadTable {
+    width: 100%;
+}
+
+/* Top Navigation Bar */
+ul#topbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: hsl(0, 100%, 8%)
+}
+ul#topbar li {
+    border: 1px white groove;
+    display: inline-block;
+    color: chartreuse;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none
+}
+
 /* Active Elements */
-a:visited {
-    color: red;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 ::selection {
     color: hsl(200, 80%, 60%);

@@ -9,8 +9,14 @@
         </title>
     </head>
     <body>
+        <div class='topbar'>
+            <ul id='topbar'>
+                <li><a href='index.html'>Home</a></li>
+                <li><a href='page2.html'>Away</a></li>
+                <li><a>And so on...</a></li>
+            </ul>
+        </div>
         <div class='header'>
-            <a href="page2.html"> Weengis. </a>
             <h1>
                 This is where I try new things.
             </h1>
@@ -30,7 +36,7 @@
                 Meat of the site.
             </h3>
             <p id='hiContent'>
-                Here's some more content for my website that I'm building. If you'd like to see more, you can click <a href='http://y.dsausa.org' target='blank'>here!</a> Thanks for visiting
+                Here's some more content for my website that I'm building. If you'd like to see more, you can click <a href='page2.html' target='blank'>here!</a> Thanks for visiting
                 my website.
             </p>
             <figure style='display: block; margin-left: auto; margin-right: auto; width: 50%'>
@@ -40,7 +46,7 @@
         </div>
         <div class='main' style='outline-color: crimson'>
             <p>
-                I'm a rising fourth-year student pursuing majors in Physics and Mathematics at Georgia Tech. I use they/them and he/him pronouns, and am currently in the process of becoming comfortable with my gender and sexuality.
+                I'm a rising fourth-year student pursuing majors in Physics and Mathematics at Georgia Tech. I use they/them and he/him pronouns, and am currently in the process of becoming comfortable with and discovering my gender and sexuality.
                 <br /> <br />
                 My hobbies include:
             </p>
@@ -57,7 +63,31 @@
                     The Democratic Socialists of America (DSA) is the largest socialist organization in the United States. We believe that working people should run both the economy and society democratically to meet human needs, not to make profits for a few... We are a political and activist organization... [whose] members use a variety of tactics, from legislative to direction action, to fight for reforms that empower working people.
                 </blockquote>
         </div>
-
+        <div class='bread'>
+            <table id='breadTable'>
+                <caption><strong>Socialist Theories</strong></caption>
+                <tr>
+                    <th>Theory</th>
+                    <th>Founder</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>Marxism</td>
+                    <td>Karl Marx and Friedrich Engels</td>
+                    <td>1848</td>
+                </tr>
+                <tr>
+                    <td>Anarchism</td>
+                    <td>Proudhon</td>
+                    <td>1792</td>
+                </tr>
+                <tr>
+                    <td>Social Democracy</td>
+                    <td>Lasalle</td>
+                    <td>1857</td>
+                </tr>
+            </table>
+        </div>
         <script>
             let searchInput = document.getElementById('searchbar');
             searchInput.addEventListener('keyup', buttonOnEnter)
