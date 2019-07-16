@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang='en-US'> 
     <head>
+        <title>
+                Virtual Workspace
+        </title>
+        <meta name='description' content='A website experiment'>
+        <meta name='author' content='Sumter'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel='stylesheet' href='style.css'>
         <script src='webScripts.js'>
         </script>
-        <title>
-            Virtual Workspace
-        </title>
     </head>
     <body>
         <div class='topbar'>
             <ul id='topbar'>
-                <li><a href='index.html'>Home</a></li>
-                <li><a href='page2.html'>Away</a></li>
-                <li><a>And so on...</a></li>
+                <li><a class='nav' href='index.html'>Home</a></li>
+                <li><a class='nav' href='page2.html'>Away</a></li>
+                <li><a class='nav' href='page3.html'>And so on...</a></li>
+            </ul>
+        </div>
+        <div id='tableofcontents'>
+            <ul>
+                <li><a href='#test'>Testing block</a></li>
+                <li><a href='#meat'>Meat of the site</a></li>
+                <li><a href='#breadTable'>Socialist Theories</a></li>
             </ul>
         </div>
         <div class='header'>
@@ -21,18 +31,19 @@
                 This is where I try new things.
             </h1>
             <input id='searchbar' type='text'> <!-- I'm gonna type this mf comment here for y'all to put your eyeballs on-->
-            <input id='btn' type='button' value='Website' onclick="window.open('http://youtube.com')"/>
+            <input id='btn' type='button' value='Google Search' onclick="window.open('http://youtube.com')"/>
         </div>
         <div class='testing'>
-            <h3 title='testing block'>
+            <h3 id='test' title='testing block'>
                 Testing block.
             </h3>
             <p onclick="flipColor(this, 'red')">
                 boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof boof 
             </p>
+            <iframe class='pip' src='page3.html' name='iframe_a'></iframe>
         </div>
         <div class='meat'>
-            <h3 title='main stuff'>
+            <h3 id='meat' title='main stuff'>
                 Meat of the site.
             </h3>
             <p id='hiContent'>

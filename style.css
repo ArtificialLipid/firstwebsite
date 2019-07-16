@@ -98,8 +98,17 @@ ul#topbar li a {
 
 /* Active Elements */
 a {
+    color: red;
+    text-decoration: underline;
+}
+a.nav {
     text-decoration: none;
     color: inherit;
+}
+.pip {
+    border: 4px inset crimson;
+    height: 300px;
+    width: 300px;
 }
 ::selection {
     color: hsl(200, 80%, 60%);
