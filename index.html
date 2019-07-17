@@ -8,6 +8,7 @@
         <meta name='author' content='Sumter'>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel='stylesheet' href='style.css'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <script src='webScripts.js'>
         </script>
     </head>
@@ -19,19 +20,32 @@
                 <li><a class='nav' href='page3.html'>And so on...</a></li>
             </ul>
         </div>
-        <div id='tableofcontents'>
-            <ul>
-                <li><a href='#test'>Testing block</a></li>
-                <li><a href='#meat'>Meat of the site</a></li>
-                <li><a href='#breadTable'>Socialist Theories</a></li>
+        <div>
+            <ul id='tableofcontents'>
+                <li><a href='#test'>Testing block</a><i class='material-icons'>cloud</i></li>
+                <li><a href='#meat'>Meat of the site</a><i class='material-icons'>school</i></li>
+                <li><a href='#breadTable'>Socialist Theories</a><i class='material-icons'>cake</i></li>
             </ul>
         </div>
         <div class='header'>
             <h1>
                 This is where I try new things.
             </h1>
-            <input id='searchbar' type='text'> <!-- I'm gonna type this mf comment here for y'all to put your eyeballs on-->
-            <input id='btn' type='button' value='Google Search' onclick="window.open('http://youtube.com')"/>
+            <form id='search' method='get' action='http://www.google.com/search' target="_blank">
+                <input id='searchbar' name='q' type='search' /> <!-- I'm gonna type this mf comment here for y'all to put your eyeballs on-->
+                <input id='btn' type='submit' value='Google Search' />
+                <input type='reset' value='Clear'>
+            </form>
+            <br />
+            <form id='dropdown'>
+                <input list='things'>
+                <datalist id='things'>
+                    <option value='Thing A' />
+                    <option value='Thing B' />
+                    <option value='Thing C' />
+                </datalist>
+                <input type='submit' value='Thing: Selected!'>
+            </form>
         </div>
         <div class='testing'>
             <h3 id='test' title='testing block'>
