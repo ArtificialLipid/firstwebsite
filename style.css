@@ -22,6 +22,11 @@ div.main {
     border-style: solid;
     border-color: white;
     margin: 20px;
+    display: table-cell;
+    vertical-align: middle;
+}
+div.main p {
+    margin: auto;
 }
 h1 {
     background-color: hsl(248, 53%, 65%);

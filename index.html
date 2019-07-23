@@ -18,6 +18,7 @@
                 <li><a class='nav' href='index.html'>Home</a></li>
                 <li><a class='nav' href='page2.html'>Away</a></li>
                 <li><a class='nav' href='page3.html'>And so on...</a></li>
+                <li><a class='nav' href='phpinfo.php'>PHP</a></li>
             </ul>
         </div>
         <div>
@@ -37,8 +38,8 @@
                 <input type='reset' value='Clear'>
             </form>
             <br />
-            <form id='dropdown'>
-                <input list='things'>
+            <form id='dropdown' action='phpinfo.php' method='post'>
+                <input list='things' name='thing'>
                 <datalist id='things'>
                     <option value='Thing A' />
                     <option value='Thing B' />
